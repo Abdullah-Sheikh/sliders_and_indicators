@@ -17,7 +17,10 @@ class _State extends State<MyApp> {
 
   void _onchanged(double value)
   {
-   _value = value;
+    setState(() {
+      _value = value;
+    });
+
   }
   @override
   Widget build(BuildContext context) {
